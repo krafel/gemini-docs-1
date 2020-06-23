@@ -20,7 +20,7 @@ Put docs into the Gemini Documents repo
  2. ``git clone git@github.com:gemini-rtsw/gemini-docs.git`` clone the Gemini Docs repo
  3. Copy rst files into the appropriate repo directory
  4. ``git add <filename>`` add your new files to the repo
- 5. ``vi index.rst`` edit the appropriate index.rst file to add your files to the end ::
+ 5. ``vi index.rst`` edit the appropriate index.rst file and add your files to a toctree ::
 
    .. literalinclude:: ../index.rst 
       :language: rst
@@ -29,7 +29,8 @@ Put docs into the Gemini Documents repo
  6. ``git commit <filename[s]> -m "comment"`` commit your changes
  7. ``git push`` push changest to github and trigger Read-The-Docs build
  8. After the ``git push`` Read-The-Docs will take a few minutes to upload your docs
- 9. View updated `docs here <https://gemini-rtd-feasibility.readthedocs.io/en/latest/index.html>`_
+ 9. View updated docs `gemini-docs-rt.readthedocs.io <https://gemini-docs-rt.readthedocs.io/en/latest/index.html>`_
+ 10. View the build page 
 
   * The `github.com <https://www.github.com/gemini-rtsw/gemini-docs>`_ repo page will also have a link to the documents on Read-The-Docs
 
