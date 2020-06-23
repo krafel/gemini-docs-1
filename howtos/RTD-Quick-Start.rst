@@ -2,7 +2,7 @@ Quick Start Guide
 =================
 
 Convert docs to rst or write rst
--------------------
+--------------------------------
 
 *Read the docs uses RestructuredText (rst) markup text. All documents must be written in rst.* 
 
