@@ -1,8 +1,10 @@
 Quick Start Guide
 =================
 
-Convert docs or write rst
+Convert docs to rst or write rst
 -------------------
+
+*Read the docs uses RestructuredText (rst) markup text. All documents must be written in rst.* 
 
  1. install pandoc then ``pandoc --help`` 
  2. pdfs will have to be converted to docx using Word, most other formats can be converted directly
