@@ -1,45 +1,50 @@
 Quick Start Guide
 =================
 
- **Convert docs to rst**
+Convert docs or write rst
+-------------------
 
- 1. ``pandoc --help`` Install pandoc if needed
- 2. pdfs will have to be converted to docx using word
- 2. ``pandoc -f docx -t rst filename.docx -o filename.rst`` typical pandoc usage
- 3. ``pandoc -f docx -t rst filename.docx -o filename.rst --extract-media=./media`` convert doc with images
- 4. or `write rst <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ 
+ 1. install pandoc then ``pandoc --help`` 
+ 2. pdfs will have to be converted to docx using Word, most other formats can be converted directly
+ 3. ``pandoc -f docx -t rst filename.docx -o filename.rst`` typical pandoc usage
+ 4. ``pandoc -f docx -t rst filename.docx -o filename.rst --extract-media=./media`` convert doc with images
+ 5. or `write rst <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
+ 
 
-  * Note: rst is indent aware like python 
+ * Note: rst is indent aware like python 
 
- **Put docs in Gemini RTD Feasibility Git Repo**
+Put docs into the Gemini Documents repo 
+---------------------------------------
 
- 1. ``yum install git`` install git if needed
- 2. ``git clone https://github.com/hstecher/gemini-rtd-feasibility.git`` clone the RTD study repo
+ 1. install git 
+ 2. ``git clone git@github.com:gemini-rtsw/gemini-docs.git`` clone the Gemini Docs repo
  3. Copy rst files into the appropriate repo directory
-
-  * ``pdfs/``
-  * ``html/``
-  * ``wiki/``
-  * ``other/``
-
  4. ``git add <filename>`` add your new files to the repo
- 5. ``vi pdfs/pdfs-index.rst`` edit the appropriate index.rst file to add your files to the end ::
+ 5. ``vi index.rst`` edit the appropriate index.rst file to add your files to the end ::
 
-   .. literalinclude:: ../pdfs/pdfs-index.rst 
+   .. literalinclude:: ../index.rst 
       :language: rst
       :emphasize-lines: 8
 
- 6. ``git commit filename.rst -m "comment"`` commit your changes
-    ``git commit pdfs-index.rst -m "comment"``
-
- 7. ``git push origin master`` push changest to github and trigger Read-The-Docs build
-
+ 6. ``git commit <filename[s]> -m "comment"`` commit your changes
+ 7. ``git push`` push changest to github and trigger Read-The-Docs build
  8. After the ``git push`` Read-The-Docs will take a few minutes to upload your docs
  9. View updated `docs here <https://gemini-rtd-feasibility.readthedocs.io/en/latest/index.html>`_
 
-  * The `github.com <https://www.github.com/hstecher/gemini-rtd-feasibility>`_ repo page will also have a link to the documents on Read-The-Docs
+  * The `github.com <https://www.github.com/gemini-rtsw/gemini-docs>`_ repo page will also have a link to the documents on Read-The-Docs
 
- **Additional Info**
+Compile locally (optional)
+--------------------------
+ 
+ 1. install pip (Ex: on macOS ``sudo easy_install pip``)
+ 2. ``pip install sphinx``
+ 3. ``pip install sphinx_rtd_theme``
+ 4. ``sphinx-build --version`` 
+ 5. on macOS only, add ``PATH="$HOME/Library/Python/2.7/bin:$PATH"`` to .bash_profile 
+ 6. ``make html`` in Gemini Docs repository home
+
+Additional Info
+---------------
 
  * `reStructuredText Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
 
