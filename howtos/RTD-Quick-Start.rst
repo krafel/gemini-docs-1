@@ -36,7 +36,7 @@ Put docs into the Gemini Documents repo
 
   * The `github.com <https://www.github.com/gemini-rtsw/gemini-docs>`_ repo page will also have a link to the documents on Read-The-Docs
 
-Compile locally (optional)
+Compile rst locally (highly recommended)
 --------------------------
  
  1. Install pip (Ex: on macOS ``sudo easy_install pip``)
