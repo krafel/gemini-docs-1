@@ -44,6 +44,16 @@ Compile locally (optional)
  5. on macOS only, add ``PATH="$HOME/Library/Python/2.7/bin:$PATH"`` to .bash_profile 
  6. ``make html`` in Gemini Docs repository home
 
+Create a Read-The-Docs account (optional)
+-----------------------------------------
+
+ 1. go to `Read-The-Docs <readthedocs.org>`_  
+ 2. click on `Sign up`
+ 3. click on `Sign up with GitHub`
+ 4. click on `Import a Project`
+ 5. from your main page you can click on a project to access the admin page  
+ 
+
 Additional Info
 ---------------
 
